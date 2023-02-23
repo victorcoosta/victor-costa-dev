@@ -442,6 +442,7 @@ footer p {
     }
 
     .menu-close {
+        display: block;
         font-family: 'Fira Code';
 
         position: absolute;
