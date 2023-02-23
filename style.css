@@ -1,0 +1,508 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(124, 94, 153, 1);
+    width: 100%;
+    height: 80px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+}
+
+header img {
+    width: 126px;
+    height: auto;
+    padding: 5px;
+}
+
+header .nav-download {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+}
+
+header .menu-items {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+
+    list-style: none;
+}
+
+header .menu-items li {
+    position: relative;
+
+    display: block;
+    margin-right: 20px;
+}
+
+header .menu-items li::before {
+    content: "";
+    
+    background-color: rgba(242, 90, 112, 1);
+    
+    width: 10px;
+    height: 10px;
+    display: block;
+    
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+header .menu-items li a {
+    color: white;
+    
+    text-decoration: none;
+
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+
+    transition: all 300ms ease-out;
+}
+
+header .menu-items li a:hover {
+    color: rgb(201, 201, 201);
+}
+
+header .button-download {
+    font-family: 'Fira Code';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+
+    
+    color: white;
+    background: #F25A70;
+    
+    box-shadow: 5px 5px 0px #000000;
+    border: 0px;
+
+    width: 170px;
+    height: 60px;
+
+    cursor: pointer;
+
+    transition: all 300ms ease-out;
+}    
+
+header .button-download:hover {
+    background-color: rgb(187, 70, 88);
+}
+
+.mwnu-mobile {
+    display: none;
+}
+
+section {
+    display: flex;
+    align-items: center;
+}
+
+main .info {
+    background-image: url(./image/vs-code.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 750px;
+
+    position: relative;
+}
+
+main .info div {
+    font-family: 'Press Start 2P';
+
+    max-width: 627px;
+    width: 100%;
+    height: 184px;
+
+    margin-left: 91px;
+
+    background: #3A4042;
+    box-shadow: 4px 4px 0px #000000;
+    text-shadow: 4px 4px 0px #000000;
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+.menu-mobile, .menu-close {
+    display: none;
+}
+
+main .info button {
+    font-family: 'Fira Code';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+
+    
+    color: white;
+    background: #F25A70;
+    
+    box-shadow: 5px 5px 0px #000000;
+    border: 0px;
+
+    margin-top: 60px;
+
+    width: 170px;
+    height: 60px;
+
+    cursor: pointer;
+
+    transition: all 300ms ease-out;
+}
+
+main .info button:hover {
+    background-color: rgb(187, 70, 88);
+}
+
+main .my-info {
+    font-size: 40px;
+    line-height: 40px;
+
+    color: #F25A70;
+    
+    top: 116px;
+    left: 61px;
+
+    padding-top: 42px;
+}
+
+main .info div h2 {
+    font-family: 'Press Start 2P';
+    text-shadow: 4px 4px 0px #000000;
+    font-size: 30px;
+
+    color: white;
+
+    padding-top: 30px;
+}
+
+main .skill-title-main {
+    font-family: 'Press Start 2P';
+    font-size: 40px;
+    line-height: 40px;
+
+    padding-top: 50px;
+    padding-bottom: 60px;
+
+    color: white;
+}
+
+main .skill {
+    background-color: #F25A70;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 110px;
+}
+
+main .skill-container {
+    max-width: 1010px;
+    max-height: 480px;
+    margin: 0 auto;
+    display: flex;
+    gap: 58px;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+main .skill-content {
+    display: flex;
+    flex-direction: column;
+    gap: 43px;
+}
+
+main .skill-language {
+    display: flex;
+    gap: 27px;
+}
+
+main .skill-language-title {
+    font-family: 'Press Start 2P';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 25px;
+
+    color: white;
+}
+
+main .progress {
+    width: 367px;
+    height: 40px;
+    border-radius: 3px;
+    margin: 21px 0 0;
+    border: 5px solid #000000;
+    background: white;
+    position: relative;
+}
+
+main .progress-width {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background: #7C5E99;
+    height: 100%;
+}
+
+main .progress-width.html {
+    width: 75%;
+}
+
+main .progress-width.css {
+    width: 35%;
+}
+
+main .progress-width.js {
+    width: 10%;
+}
+
+main .progress-width.note-js {
+    width: 0%;
+}
+
+main .progress-width.react {
+    width: 0%;
+}
+
+main .progress-width.rest-api {
+    width: 0%;
+}
+
+main .projects {
+    background-color: black;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 40px;
+
+    border-top: 6px solid #7C5E99;
+}
+
+main .projects p {
+    font-family: 'Fira Code';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+
+    
+    color: white;
+}
+
+main .about {
+    background-color: #7C5E99;
+
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 40px;
+
+    border-top: 6px solid #F25A70;
+}
+
+main .about p {
+    font-family: 'Fira Code';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+
+    
+    color: white;
+}
+
+main .contact {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #3A4042;
+
+    border-top: 6px solid black;
+}
+
+main .contact a {
+    font-family: 'Fira Code';
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+
+    color: white;
+    
+    display: flex;
+    align-items: center;
+
+    max-width: 270px;
+    width: 100%;
+
+    text-decoration: none;
+
+    transition: all 300ms ease-out;
+}
+
+main .contact a:hover {
+    color: rgb(151, 151, 151);
+}
+
+main .contact img {
+    
+    width: 70px;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background: #000000;
+}
+
+footer p {
+    font-family: 'Fira Code';
+    font-size: 15px;
+    line-height: 26px;
+    text-align: end;
+
+    padding-top: 75px;
+    padding-right: 20px;
+    
+    color: white;
+}
+
+@media screen and (max-width:1028px) {
+    header .button-download {
+        display: none;
+    }
+    
+    .menu-mobile {
+        display: flex;
+
+        font-family: 'Fira Code';
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+        justify-content: center;
+    
+        
+        color: white;
+        background: #F25A70;
+        
+        box-shadow: 5px 5px 0px #000000;
+        border: 0px;
+    
+        width: 70px;
+    
+        cursor: pointer;
+    
+        transition: all 300ms ease-out;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        max-width: 420px;
+        width: 100%;
+        height: 100vh;
+        background-color: #8f0000;
+
+        z-index: 5;
+        transition: all 300ms ease-in-out;
+    }
+
+    nav.open {
+        left: 0;
+    }
+
+    .menu-close {
+        font-family: 'Fira Code';
+
+        position: absolute;
+        top: 25px;
+        right: 25px;
+
+        background-color: transparent;
+        border: 0;
+        font-size: 24px;
+
+        color: white;
+    }
+
+    .menu-items {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        height: 100%;
+    }
+
+    main .info div {
+        margin: 0 16px;
+    }
+
+    main .my-info, main .info div h2 {
+        font-size: 20px;
+    }
+
+    main .info button {
+        display: block;
+
+        margin: 70px auto;
+    }
+
+    main .info button:last-child {
+        margin: 10px auto;
+    }
+
+    main .skill-container {
+        flex-direction: column;
+        max-height: 100%;
+    }
+
+    main .skill-language {
+        gap: 5px;
+    }
+
+    main .skill-language img {
+        width: 50px;
+    }
+
+    main .language {
+        flex: 1;
+    }
+
+    main .progress {
+        width: 100%;
+    }
+
+    main .skill-title-main {
+        font-size: 25px;
+    }
+}
